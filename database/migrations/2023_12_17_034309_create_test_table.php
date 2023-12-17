@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('test', function (Blueprint $table) {
             $table->id();
-            $table->double("amount_in_euro");
-            $table->string("attachments");
+            $table->string("amount_in_euro");
+            $table->string("attachments")->nullable();
             $table->timestamps();
         });
     }

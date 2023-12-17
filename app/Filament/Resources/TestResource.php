@@ -28,7 +28,7 @@ class TestResource extends Resource
                 $money($input)
             JS)),
                 FileUpload::make('attachments')
-                    ->required()
+                    // ->required()
                     ->multiple()
             ]);
     }
